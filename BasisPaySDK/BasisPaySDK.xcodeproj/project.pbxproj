@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F57A6724F7EDEF00C265AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F57A6624F7EDEF00C265AA /* AppDelegate.swift */; };
+		84F57A6924F7EDEF00C265AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F57A6824F7EDEF00C265AA /* SceneDelegate.swift */; };
+		84F57A6E24F7EDEF00C265AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F57A6C24F7EDEF00C265AA /* Main.storyboard */; };
+		84F57A7024F7EDF000C265AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F57A6F24F7EDF000C265AA /* Assets.xcassets */; };
+		84F57A7324F7EDF000C265AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F57A7124F7EDF000C265AA /* LaunchScreen.storyboard */; };
+		84F57A7C24F7EE3200C265AA /* BasisPay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F57A7B24F7EE3200C265AA /* BasisPay.xcframework */; };
+		84F57A7D24F7EE3200C265AA /* BasisPay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F57A7B24F7EE3200C265AA /* BasisPay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		84F57A8124F7EEFA00C265AA /* PaymentProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F57A7F24F7EEFA00C265AA /* PaymentProcessViewController.swift */; };
+		84F57A8224F7EEFA00C265AA /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F57A8024F7EEFA00C265AA /* InitialViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84F57A7E24F7EE3200C265AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84F57A7D24F7EE3200C265AA /* BasisPay.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84F57A6324F7EDEF00C265AA /* BasisPaySDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasisPaySDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F57A6624F7EDEF00C265AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F57A6824F7EDEF00C265AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84F57A6D24F7EDEF00C265AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F57A6F24F7EDF000C265AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F57A7224F7EDF000C265AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F57A7424F7EDF000C265AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F57A7B24F7EE3200C265AA /* BasisPay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BasisPay.xcframework; path = ../BasisPay.xcframework; sourceTree = "<group>"; };
+		84F57A7F24F7EEFA00C265AA /* PaymentProcessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentProcessViewController.swift; sourceTree = "<group>"; };
+		84F57A8024F7EEFA00C265AA /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F57A6024F7EDEF00C265AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F57A7C24F7EE3200C265AA /* BasisPay.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F57A5A24F7EDEF00C265AA = {
+			isa = PBXGroup;
+			children = (
+				84F57A6524F7EDEF00C265AA /* BasisPaySDK */,
+				84F57A6424F7EDEF00C265AA /* Products */,
+				84F57A7A24F7EE3100C265AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84F57A6424F7EDEF00C265AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F57A6324F7EDEF00C265AA /* BasisPaySDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F57A6524F7EDEF00C265AA /* BasisPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				84F57A6624F7EDEF00C265AA /* AppDelegate.swift */,
+				84F57A6824F7EDEF00C265AA /* SceneDelegate.swift */,
+				84F57A6C24F7EDEF00C265AA /* Main.storyboard */,
+				84F57A8024F7EEFA00C265AA /* InitialViewController.swift */,
+				84F57A7F24F7EEFA00C265AA /* PaymentProcessViewController.swift */,
+				84F57A6F24F7EDF000C265AA /* Assets.xcassets */,
+				84F57A7124F7EDF000C265AA /* LaunchScreen.storyboard */,
+				84F57A7424F7EDF000C265AA /* Info.plist */,
+			);
+			path = BasisPaySDK;
+			sourceTree = "<group>";
+		};
+		84F57A7A24F7EE3100C265AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F57A7B24F7EE3200C265AA /* BasisPay.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F57A6224F7EDEF00C265AA /* BasisPaySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F57A7724F7EDF000C265AA /* Build configuration list for PBXNativeTarget "BasisPaySDK" */;
+			buildPhases = (
+				84F57A5F24F7EDEF00C265AA /* Sources */,
+				84F57A6024F7EDEF00C265AA /* Frameworks */,
+				84F57A6124F7EDEF00C265AA /* Resources */,
+				84F57A7E24F7EE3200C265AA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasisPaySDK;
+			productName = BasisPaySDK;
+			productReference = 84F57A6324F7EDEF00C265AA /* BasisPaySDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F57A5B24F7EDEF00C265AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = BasisPay;
+				TargetAttributes = {
+					84F57A6224F7EDEF00C265AA = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 84F57A5E24F7EDEF00C265AA /* Build configuration list for PBXProject "BasisPaySDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F57A5A24F7EDEF00C265AA;
+			productRefGroup = 84F57A6424F7EDEF00C265AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F57A6224F7EDEF00C265AA /* BasisPaySDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F57A6124F7EDEF00C265AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F57A7324F7EDF000C265AA /* LaunchScreen.storyboard in Resources */,
+				84F57A7024F7EDF000C265AA /* Assets.xcassets in Resources */,
+				84F57A6E24F7EDEF00C265AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F57A5F24F7EDEF00C265AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F57A6724F7EDEF00C265AA /* AppDelegate.swift in Sources */,
+				84F57A6924F7EDEF00C265AA /* SceneDelegate.swift in Sources */,
+				84F57A8124F7EEFA00C265AA /* PaymentProcessViewController.swift in Sources */,
+				84F57A8224F7EEFA00C265AA /* InitialViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84F57A6C24F7EDEF00C265AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F57A6D24F7EDEF00C265AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F57A7124F7EDF000C265AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F57A7224F7EDF000C265AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F57A7524F7EDF000C265AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F57A7624F7EDF000C265AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F57A7824F7EDF000C265AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8Q23ABRH9;
+				INFOPLIST_FILE = BasisPaySDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.basispay.BasisPaySDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F57A7924F7EDF000C265AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8Q23ABRH9;
+				INFOPLIST_FILE = BasisPaySDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.basispay.BasisPaySDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F57A5E24F7EDEF00C265AA /* Build configuration list for PBXProject "BasisPaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F57A7524F7EDF000C265AA /* Debug */,
+				84F57A7624F7EDF000C265AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F57A7724F7EDF000C265AA /* Build configuration list for PBXNativeTarget "BasisPaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F57A7824F7EDF000C265AA /* Debug */,
+				84F57A7924F7EDF000C265AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F57A5B24F7EDEF00C265AA /* Project object */;
+}
