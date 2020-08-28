@@ -18,16 +18,24 @@ class PaymentProcessViewController: UIViewController {
     @IBOutlet weak var viewContainer: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        paymentGatewayViewController = PaymentGatewayController()
+        viewContainer.addSubview(paymentGatewayViewController.view)
         setDefaults()
         setInputDictionary()
         checkAndGetResponse()
     }
+    
+    //MARK: Default keys will be provided by the BasisPay support team
+    // API key
+    // Salt key
+    // return url
+    // Endpoint - just provide .Testing or .Live
     private func setDefaults() {
-        paymentGatewayViewController = PaymentGatewayController()
-        paymentGatewayViewController.paymentDefaults = PaymentDefaults(apiKey: "79e111fb-098d-4730-8c3a-17fe0c30738a", saltKey: "69ecafcf78912a3f57a00f0e78ea4194efcd7d24", returnUrl: "http://159.65.148.139/rest/mcpayment/pgdetails", endPoint: .Testing)
+        paymentGatewayViewController.paymentDefaults = PaymentDefaults(apiKey: "", saltKey: "", returnUrl: "", endPoint: .Testing)
         paymentGatewayViewController.delegate = self
-        viewContainer.addSubview(paymentGatewayViewController.view)
     }
+    
+    
     
     private func setInputDictionary() {
         guard let amountVal = amount,let titleVal = titleValue,let descriptionVal = descriptionValue else {
