@@ -31,7 +31,7 @@ class PaymentProcessViewController: UIViewController {
     // return url
     // Endpoint - just provide .Testing or .Live
     private func setDefaults() {
-        paymentGatewayViewController.paymentDefaults = PaymentDefaults(apiKey: "", saltKey: "", returnUrl: "", endPoint: .Testing)
+        paymentGatewayViewController.paymentDefaults = PaymentDefaults(apiKey: "79e111fb-098d-4730-8c3a-17fe0c30738a", saltKey: "69ecafcf78912a3f57a00f0e78ea4194efcd7d24", returnUrl: "http://159.65.148.139/rest/mcpayment/pgdetails", endPoint: .Testing)
         paymentGatewayViewController.delegate = self
     }
     
@@ -43,7 +43,7 @@ class PaymentProcessViewController: UIViewController {
         }
         
         let paymentRequestDictionary: NSDictionary = [
-            "orderId" : "253698",
+            "orderId" : "253798",
             "amount" : amountVal,
             "currency" : "INR",
             "description" : descriptionVal,
