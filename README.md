@@ -22,6 +22,116 @@ it, simply add the following line to your Podfile:
 pod 'BasisPay' , '~> 1.0.0'
 ```
 
+## Step 1
+Initialize your  PaymentGateway controller by importing Basispay in your project
+
+```
+import BasisPay
+
+class PaymentProcessViewController: UIViewController {
+    
+    var paymentGatewayViewController: PaymentGatewayController!
+    var amount:String?
+    var titleValue:String?
+    var descriptionValue:String?
+    @IBOutlet weak var viewContainer: UIView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        paymentGatewayViewController = PaymentGatewayController()
+        viewContainer.addSubview(paymentGatewayViewController.view)
+       setDefaults()
+         setInputDictionary()
+         checkAndGetResponse()
+     }
+```
+## Step 2
+Assign the Payment defaults in your class which you have already recieved from the Basispay organization.
+
+```
+private func setDefaults() {
+      paymentGatewayViewController.paymentDefaults = PaymentDefaults(apiKey: "", saltKey: "", returnUrl: "", endPoint: .Testing) }    
+
+```
+
+## Step 3
+Pass the mandatory details regarding the product which you are going to use the payment gateway in your app.
+
+```
+private func setInputDictionary() {
+    guard let amountVal = amount,let titleVal = titleValue,let descriptionVal = descriptionValue else {
+        return
+    }
+    
+    let paymentRequestDictionary: NSDictionary = [
+        "orderId" : "253698",
+        "amount" : amountVal,
+        "currency" : "INR",
+        "description" : descriptionVal,
+        "name" : titleVal,
+        "email" : "qwerty@123gmail.com",
+        "phone" : "5876986087",
+        "addressLine1" : "address_line_1",
+        "addressLine2" : "address_line_2",
+        "city" : "city",
+        "state" : "state",
+        "country" : "country",
+        "zipCode" : "zip_code",
+        "udf1" : "Testing1",
+        "udf2" : "Testing2",
+        "udf3" : "Testing3",
+        "udf4" : "Testing4",
+        "udf5" : "Testing5"
+    ]
+    paymentGatewayViewController.setInputDictionary(inputDictionary: paymentRequestDictionary)
+    
+}
+
+```
+
+## Step 4
+Delegate methods for the payment success and failure  can be handled through this protocol.
+
+```
+override func viewDidLoad(){
+paymentGatewayViewController.delegate = self
+}
+
+
+extension PaymentProcessViewController:PaymentGatewayDelegate {
+    
+    func onPaymentSucess(orderId: String, description: String) {
+        self.navigationController?.popViewController(animated: true)
+        let alertController = UIAlertController(title: "SUCCESS", message: "order Id \(orderId)", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        self.view.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+    
+    func onPaymentFailure(description: String) {
+        self.navigationController?.popViewController(animated: true)
+        let alertController = UIAlertController(title: "FAILURE", message: " message - \(description)", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        self.view.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+    
+    
+}
+```
+
+## Step 5
+Inorder to get the complete payment response from the process use the below method as follows:
+
+```
+@objc func checkAndGetResponse() {
+       if (paymentGatewayViewController.isResponseAvailable()) {
+           let responseData = paymentGatewayViewController.getResponseData()
+           print(responseData) }
+       else {
+           perform(#selector(checkAndGetResponse), with: nil, afterDelay: 2) }
+   }
+
+```
 ## Author
 
 BasisPay, basispay@gmail.com
