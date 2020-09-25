@@ -76,23 +76,20 @@ class PaymentProcessViewController: UIViewController {
     
 }
 extension PaymentProcessViewController:PaymentGatewayDelegate {
-    
-    func onPaymentSucess(orderId: String, description: String) {
+    func onPaymentSucess(response: BasisPaymentResponse) {
         self.navigationController?.popViewController(animated: true)
-        let alertController = UIAlertController(title: "SUCCESS", message: "order Id \(orderId)", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "SUCCESS", message: "order Id \(response.order_id)", preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         self.view.window?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    func onPaymentFailure(description: String) {
+    func onPaymentFailure(response: BasisPaymentResponse) {
         self.navigationController?.popViewController(animated: true)
-        let alertController = UIAlertController(title: "FAILURE", message: " message - \(description)", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "FAILURE", message: " message - \(response.description)", preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         self.view.window?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
-    
-    
 }
 

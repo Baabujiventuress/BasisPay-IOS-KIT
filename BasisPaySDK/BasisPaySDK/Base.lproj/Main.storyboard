@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSk-LL-KKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="607" y="-309"/>
+            <point key="canvasLocation" x="597" y="-298"/>
         </scene>
         <!--Integration kit-->
         <scene sceneID="Usj-Su-WlR">
@@ -127,7 +127,7 @@
                         <outlet property="descriptionLabel" destination="gRz-tc-Vq1" id="Thj-ZI-JPL"/>
                         <outlet property="payNowButton" destination="SKD-CG-a4Z" id="3Re-Os-ucz"/>
                         <outlet property="titleLabel" destination="5hj-1f-lVa" id="hfd-9c-6VD"/>
-                        <segue destination="cjg-MV-2CS" kind="push" identifier="paymentScreen" id="ojh-Z8-oge"/>
+                        <segue destination="cjg-MV-2CS" kind="show" identifier="paymentScreen" id="Q1W-ct-U2d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2o-VK-QUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
