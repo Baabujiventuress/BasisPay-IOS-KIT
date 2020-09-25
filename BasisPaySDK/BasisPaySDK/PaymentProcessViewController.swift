@@ -43,7 +43,7 @@ class PaymentProcessViewController: UIViewController {
         }
         
         let paymentRequestDictionary: NSDictionary = [
-            "orderId" : "253698",
+            "orderId" : "2536444",
             "amount" : amountVal,
             "currency" : "INR",
             "description" : descriptionVal,
