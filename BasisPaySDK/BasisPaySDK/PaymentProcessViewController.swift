@@ -31,8 +31,10 @@ class PaymentProcessViewController: UIViewController {
     // return url
     // Endpoint - just provide .Testing or .Live
     private func setDefaults() {
+        paymentGatewayViewController = PaymentGatewayController()
         paymentGatewayViewController.paymentDefaults = PaymentDefaults(apiKey: "", saltKey: "", returnUrl: "", endPoint: .Testing)
         paymentGatewayViewController.delegate = self
+        viewContainer.addSubview(paymentGatewayViewController.view)
     }
     
     
@@ -43,7 +45,7 @@ class PaymentProcessViewController: UIViewController {
         }
         
         let paymentRequestDictionary: NSDictionary = [
-            "orderId" : "2536444",
+            "orderId" : "1238923423",
             "amount" : amountVal,
             "currency" : "INR",
             "description" : descriptionVal,

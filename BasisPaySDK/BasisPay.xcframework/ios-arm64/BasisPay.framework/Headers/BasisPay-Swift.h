@@ -186,6 +186,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import UIKit;
 @import WebKit;
 #endif
@@ -205,8 +206,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+
 @class NSCoder;
-@class NSDictionary;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC8BasisPay24PaymentGatewayController")
