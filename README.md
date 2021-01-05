@@ -115,18 +115,7 @@ extension PaymentProcessViewController:PaymentGatewayDelegate {
     }
 }
 ```
-
-## Step 5
-Inorder to get the complete payment response from the process use the below method as follows:
-
 ```
-@objc func checkAndGetResponse() {
-       if (paymentGatewayViewController.isResponseAvailable()) {
-           let responseData = paymentGatewayViewController.getResponseData()
-           print(responseData) }
-       else {
-           perform(#selector(checkAndGetResponse), with: nil, afterDelay: 2) }
-   }
 
 ```
 ## Author
