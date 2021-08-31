@@ -49,7 +49,8 @@ Assign the Payment defaults in your class which you have already recieved from t
 
 ```
 private func setDefaults() {
-      paymentGatewayViewController.paymentDefaults = PaymentDefaults(apiKey: "", saltKey: "", returnUrl: "", endPoint: .Testing) }    
+      paymentGatewayViewController.paymentDefaults = PaymentDefaults(apiKey: "", saltKey: "", returnUrl: "", endPoint: .Testing)
+}    
 
 ```
 

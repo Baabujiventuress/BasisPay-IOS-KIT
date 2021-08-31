@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tsf-Dk-YSa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tsf-Dk-YSa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,9 +19,10 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18t-Q0-gzt">
                                 <rect key="frame" x="0.0" y="140" width="414" height="722"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="OPU-97-vQt"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OPU-97-vQt" firstAttribute="trailing" secondItem="18t-Q0-gzt" secondAttribute="trailing" id="Ivw-FD-rtI"/>
@@ -27,7 +30,6 @@
                             <constraint firstItem="18t-Q0-gzt" firstAttribute="top" secondItem="OPU-97-vQt" secondAttribute="top" id="hIR-oM-ZnH"/>
                             <constraint firstItem="18t-Q0-gzt" firstAttribute="leading" secondItem="OPU-97-vQt" secondAttribute="leading" id="pUc-DD-Szr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="OPU-97-vQt"/>
                     </view>
                     <navigationItem key="navigationItem" id="zFg-Th-kNX"/>
                     <connections>
@@ -52,7 +54,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dragon Flame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hj-1f-lVa">
                                         <rect key="frame" x="15" y="20" width="168" height="33.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This was one of the best custom made shoes manufactured targeting all age peoples in the world" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRz-tc-Vq1">
@@ -61,7 +63,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKD-CG-a4Z">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKD-CG-a4Z">
                                         <rect key="frame" x="62" y="220.5" width="290" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -75,7 +77,7 @@
                                             <action selector="payNowButtonClicked:" destination="ZLd-QE-XH1" eventType="touchUpInside" id="NZ3-16-Yuv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LN2-R9-KOQ">
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LN2-R9-KOQ">
                                         <rect key="frame" x="311" y="19" width="83" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -107,7 +109,8 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="426.5"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XwW-oz-Ag1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="P5R-Dw-uuv" firstAttribute="height" secondItem="jvP-hi-23R" secondAttribute="height" multiplier="0.33" id="2I1-E4-Kau"/>
                             <constraint firstItem="P5R-Dw-uuv" firstAttribute="top" secondItem="Wo8-x6-Ayx" secondAttribute="bottom" id="8wd-Uk-lJr"/>
@@ -118,7 +121,6 @@
                             <constraint firstItem="Wo8-x6-Ayx" firstAttribute="leading" secondItem="XwW-oz-Ag1" secondAttribute="leading" id="n3q-Tl-2PS"/>
                             <constraint firstItem="P5R-Dw-uuv" firstAttribute="leading" secondItem="XwW-oz-Ag1" secondAttribute="leading" id="oM3-dS-HVp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XwW-oz-Ag1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Integration kit" id="VnU-ot-JNU"/>
                     <connections>
@@ -153,5 +155,11 @@
     </scenes>
     <resources>
         <image name="shoe" width="283.33334350585938" height="331.66665649414062"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
